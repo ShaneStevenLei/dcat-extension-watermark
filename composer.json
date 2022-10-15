@@ -1,0 +1,32 @@
+{
+    "name": "shanestevenlei/dcat-extension-watermark",
+    "alias": "水印插件",
+    "description": "Dcat-admin 水印插件",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension", "watermark"],
+    "homepage": "https://github.com/shanestevenlei/dcat-extension-watermark",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shanestevenlei",
+            "email": "shanestevenlei@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShaneStevenLei\\DcatExtensionWatermark\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "ShaneStevenLei\\DcatExtensionWatermark\\DcatExtensionWatermarkServiceProvider",
+        "laravel": {
+            "providers": [
+                "ShaneStevenLei\\DcatExtensionWatermark\\DcatExtensionWatermarkServiceProvider"
+            ]
+        }
+    }
+}
