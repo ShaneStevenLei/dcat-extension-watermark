@@ -11,7 +11,6 @@ class DcatExtensionWatermarkServiceProvider extends ServiceProvider
         'js/index.js',
     ];
     protected $css = [
-        'css/index.css',
     ];
 
     protected $middleware = [
